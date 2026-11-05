@@ -16,6 +16,7 @@ export default function Home() {
           <div className="hero-actions">
             <a className="btn primary" href={profile.resumePdf}>Download my resume ↓</a>
             <Link className="btn" href="/about">About me</Link>
+            <a className="btn" href={profile.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a>
           </div>
         </div>
         <CommitChart />
