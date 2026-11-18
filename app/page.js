@@ -1,6 +1,6 @@
 import Link from "next/link";
 import CommitChart from "@/components/CommitChart";
-import { profile, stats, caseStudies, moreWork, howIBuild } from "@/lib/content";
+import { profile, stats, caseStudies, sideProject, moreWork, howIBuild } from "@/lib/content";
 
 export default function Home() {
   return (
@@ -47,6 +47,23 @@ export default function Home() {
             </Link>
           ))}
         </div>
+      </section>
+
+      <section id="built">
+        <div className="sec-head">
+          <p className="label">Built on my own</p>
+          <h2>A product, end to end</h2>
+          <p>Designed, built and run by me: a job tracker that Claude updates directly over MCP.</p>
+        </div>
+        <Link className="card wide" href={`/work/${sideProject.slug}`}>
+          <div className="text">
+            <span className="tag">{sideProject.tag}</span>
+            <h3>{sideProject.title}</h3>
+            <p>{sideProject.summary}</p>
+            <span className="more">See how it works →</span>
+          </div>
+          <img className="card-thumb" src={sideProject.screenshots[0].src} alt="" width={sideProject.screenshots[0].width} height={sideProject.screenshots[0].height} loading="lazy" />
+        </Link>
       </section>
 
       <section id="more">
