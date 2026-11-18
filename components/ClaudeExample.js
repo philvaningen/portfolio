@@ -17,7 +17,7 @@ export default function ClaudeExample({ example }) {
         <span className="label">Claude</span>
         <p>{example.reply}</p>
       </div>
-      <figcaption className="note">Illustrative exchange using the demo data. The tool calls are the real ones behind the Changes screenshot above.</figcaption>
+      <figcaption className="note">Illustrative exchange using the demo data. These are three of the real tool calls behind the Changes screenshot above.</figcaption>
     </figure>
   );
 }

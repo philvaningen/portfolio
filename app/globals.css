@@ -197,3 +197,4 @@ nav a[aria-current="page"]{color:var(--accent);font-weight:600}
 .sp-block h2{font-size:24px;font-weight:700}
 @media (max-width:820px){.shots{grid-template-columns:1fr}.card.wide{grid-template-columns:1fr}}
 @media (max-width:560px){.arch,.claude-ex{padding:16px}}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
